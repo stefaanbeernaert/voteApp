@@ -43,5 +43,29 @@
                </a>
            </div>
        </header>
+
+    <main class="container mx-auto max-w-custom  flex">
+        <div class="w-70 mr-5">
+           Add idea form goes here. sit amet, consectetur adipisicing elit. Ad cum dignissimos exercitationem odit placeat quod recusandae repellat vitae. Consequuntur corporis delectus dicta distinctio ea esse et hic id iste laboriosam laudantium maiores molestias mollitia odio officia quis reiciendis sequi temporibus tenetur, ullam unde voluptate voluptatem voluptates.
+        </div>
+        <div class="w-175">
+        <nav class="flex items-center justify-between text-xs">
+            <ul class="flex uppercase font-semibold space-x-10 border-b-4 pb-3">
+                <li><a class="border-b-4 pb-4 border-blue" href="#">All Ideas (87)</a></li>
+                <li><a class="text-gray-400 transition duration-400 ease-in border-b-4 pb-3 hover:border-blue" href="#">Considering (6)</a></li>
+                <li><a class="text-gray-400 transition duration-400 ease-in border-b-4 pb-3 hover:border-blue" href="#">In Progress (1)</a></li>
+            </ul>
+                <ul class="flex uppercase font-semibold space-x-10 border-b-4 pb-3">
+                    <li><a class="text-gray-400 transition duration-400 ease-in border-b-4 pb-3 hover:border-blue" href="#">Implemented (10)</a></li>
+                    <li><a class="text-gray-400 transition duration-400 ease-in border-b-4 pb-3 hover:border-blue" href="#">Closed (55)</a></li>
+                </ul>
+
+
+        </nav>
+            <div class="mt-8">
+                {{$slot}}
+            </div>
+        </div>
+    </main>
     </body>
 </html>
