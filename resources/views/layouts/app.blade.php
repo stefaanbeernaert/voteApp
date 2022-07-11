@@ -10,8 +10,9 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
-        <!-- Scripts -->
+        <!-- Scripts & Styles-->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <livewire:styles />
     </head>
     <body class="font-sans bg-gray-background text-gray-900 text-sm">
     <header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
@@ -115,5 +116,6 @@
             </div>
         </div>
     </main>
+    <livewire:scripts />
     </body>
 </html>
