@@ -62,3 +62,19 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
+
+.open {
+    @apply bg-gray-200
+}
+.considering {
+    @apply bg-purple text-white
+}
+.in-progress {
+    @apply bg-yellow text-white
+}
+.implemented {
+    @apply bg-green text-white
+}
+.closed {
+    @apply bg-red text-white
+}
