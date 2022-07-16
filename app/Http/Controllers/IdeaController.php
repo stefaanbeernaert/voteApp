@@ -15,13 +15,12 @@ class IdeaController extends Controller
      */
     public function index()
     {
-
-        return view('idea.index',[
-            'ideas' => Idea::with('user','category','status')
+        return view('idea.index', [
+            'ideas' => Idea::with('user', 'category', 'status')
+                ->orderBy('id', 'desc')
                 ->simplePaginate(Idea::PAGINATION_COUNT),
         ]);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -53,7 +52,7 @@ class IdeaController extends Controller
     {
         //
         return view('idea.show',[
-            'idea' => $idea
+            'idea' => $idea,
             ] );
     }
 
