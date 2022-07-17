@@ -44,6 +44,10 @@ class User extends Authenticatable
     public function ideas(){
         return $this->hasMany(Idea::class);
     }
+
+    public function votes(){
+        return $this->belongsToMany(Idea::class,'votes');
+    }
     public function getAvatar()
     {
         $firstCharacter = $this->email[0];
